@@ -10,4 +10,4 @@ export default class HelloWebComponent extends LightningElement {
     handleGreetingChange(event) {
         this.greeting = event.target.value;
     }
-}
+}  
