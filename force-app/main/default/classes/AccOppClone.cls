@@ -1,4 +1,4 @@
-public with sharing class AccOppClone {
+public with sharing class AccOppClone {  
     @AuraEnabled(cacheable=true)
     public static List<Account> getAccounts() {
         return [
