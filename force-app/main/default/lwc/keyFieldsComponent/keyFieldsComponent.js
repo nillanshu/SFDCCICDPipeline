@@ -38,6 +38,10 @@ export default class KeyFieldsComponent extends LightningElement {
     fetchKeyFields() {
         getKeyFields({ recordId: this.recordId })
             .then(result => {
+                console.log(
+                    'KeyFieldsComponent.fetchKeyFields: Successfully fetched key fields:',
+                    result
+                );
                 this.keyFields = result;
             })
             .catch(error => {
